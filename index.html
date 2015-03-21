@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="http://getskeleton.com/dist/css/normalize.css">
+    <link rel="stylesheet" href="http://getskeleton.com/dist/css/skeleton.css">
+    <style>
+        [draggable] {
+            -moz-user-select: none;
+            -khtml-user-select: none;
+            -webkit-user-select: none;
+            user-select: none;
+            /* Required to make elements draggable in old WebKit */
+            -khtml-user-drag: element;
+            -webkit-user-drag: element;
+        }
+        .product {
+            border: 1px solid #eee;
+            border-radius: 5px;
+            display: inline-block;
+            padding: 10px;
+            cursor: pointer;
+            width: 200px;
+            margin-right: 10px;
+        }
+        .product p {
+            margin: 0;
+        }
+        .product span {
+            font-style: italic;
+            color: #9d9d9d;
+        }
+        body {
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="app"></div>
+    </div>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.2/underscore-min.js"></script>
+    <script type="text/javascript" src="build/app.js"></script>
+</body>
+</html>
